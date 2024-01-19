@@ -11,9 +11,7 @@ const cors = require("cors");
 const connectToDb = require("./config/connectToDb");
 const usersController = require("./controllers/usersController");
 
-const {
-  errorHandlerMiddleware,
-} = require("../backend/middleware/errorHandler");
+const { errorHandlerMiddleware } = require("./middleware/errorHandler");
 
 //create express app
 const app = express();
