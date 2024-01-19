@@ -3,12 +3,23 @@ const mongoose = require("mongoose");
 
 //create Schema
 const UserSchema = new mongoose.Schema({
-  nafNo: String,
-  firstname: String,
-  middlename: String,
-  lastname: String,
-  username: String,
-  password: String,
+  svcNo: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+
+  initials: String,
+  surname: String,
+  appt: String,
+  rank: String,
+
+  password: {
+    type: String,
+    required: true,
+  },
+
+  category: String,
 });
 
 //create or access model

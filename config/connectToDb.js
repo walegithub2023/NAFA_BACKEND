@@ -1,8 +1,3 @@
-//load env variables
-if (process.env.NODE_ENV != "production") {
-  require("dotenv").config();
-}
-
 //import dependencies
 const mongoose = require("mongoose");
 
